@@ -9,6 +9,10 @@
 <body>
   <div id="app">
     <h1>{{title}}</h1>
+    <h2>{{fullName}}</h2>
+    <input type="text" v-model="motherName"></input>
+    <button type="submit" :disabled="!motherName" @click="submit">Enter</button>
+    <h1>{{finalResult}}</h1>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
   <script type="text/javascript" src="main.js"></script>
